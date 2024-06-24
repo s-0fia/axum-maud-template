@@ -19,7 +19,7 @@ use crate::pages::all_routes;
 mod pages;
 
 const LOCAL_HOST: IpAddr = IpAddr::V4(Ipv4Addr::new(127, 0, 0, 1));
-const IP: IpAddr = /*LOCAL_HOST; */ IpAddr::V4(Ipv4Addr::new(192, 168, 1, 100));
+const IP: IpAddr = LOCAL_HOST;
 const PORT: u16 = 8080;
 const SOCKET_ADDR: SocketAddr = SocketAddr::new(IP, PORT);
 
